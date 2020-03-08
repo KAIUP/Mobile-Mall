@@ -36,13 +36,18 @@ export default {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    
     padding: 15px 10px 0 10px;
   }
 
+  .category-content::after {
+    content: '';
+    display: block;
+    flex: 1;
+  }
   .content-item {
     width: 26%;
-    margin: 0 auto 15px;
+    margin: 0 9px 20px;
   }
 
   .item-image {
@@ -52,5 +57,6 @@ export default {
 
   .content-title {
     color: #666;
+    font-size: 13px;
   }
 </style>

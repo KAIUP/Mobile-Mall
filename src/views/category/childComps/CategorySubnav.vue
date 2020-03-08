@@ -41,7 +41,7 @@ export default {
 
 <style>
   .subnav-scroll {
-    height: calc(100% - 44px -49px);
+    height: 100%;
   }
 
   .subnav {

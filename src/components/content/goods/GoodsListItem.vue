@@ -2,8 +2,8 @@
   <div class="goods-item" @click="itemClick">
     <img v-lazy="showImage" alt="" @load="imgLoad">
     <div class="goods-info">
-    <p>{{goodsItem.title}}</p>
-    <span class="price">{{goodsItem.price}}</span>
+    <p class="title">{{goodsItem.title}}</p>
+    <span class="price">￥{{goodsItem.price}}</span>
     <span class="collect">{{goodsItem.cfav}}</span>
     </div>
   </div>
@@ -44,7 +44,7 @@ export default {
 <style>
   .goods-item {
     width: 48%;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
     position: relative;
   }
 
@@ -56,15 +56,16 @@ export default {
 
   .goods-info{
     position: absolute;
-    font-size: 12px;
+    font-size: 14px;
     bottom: 5px;
     left: 0;
     right: 0;
     text-align: center;
     overflow: hidden;
+
   }
 
-  .goods-info p{
+  .goods-info .title{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -88,6 +89,5 @@ export default {
     width: 14px;
     height: 14px;
     background: url("~assets/img/common/collect.svg") 0 0/14px 14px;
-
   }
 </style>
